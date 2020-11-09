@@ -8,13 +8,9 @@
     position: relative;
     margin: 5px 10px;
     @include overflow-wrap(break-word);
-    @include transition(all ease-out 0.3s);
 
     &:active,
     &:focus,
-    &:hover {
-      @include transform(scale(1.2));
-    }
 
     sup {
       color: $global-font-secondary-color;

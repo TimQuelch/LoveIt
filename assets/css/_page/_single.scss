@@ -267,12 +267,7 @@
     }
 
     @import "../_partial/_single/code";
-    @import "../_partial/_single/instagram";
     @import "../_partial/_single/admonition";
-    @import "../_partial/_single/echarts";
-    @import "../_partial/_single/mapbox";
-    @import "../_partial/_single/music";
-    @import "../_partial/_single/bilibili";
 
     hr {
       margin: 1rem 0;
@@ -323,7 +318,6 @@
   }
 
   @import "../_partial/_single/footer";
-  @import "../_partial/_single/comment";
 }
 
 .lg-toolbar .lg-icon::after {

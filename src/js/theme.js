@@ -77,19 +77,6 @@ class Theme {
         });
     }
 
-    initDetails() {
-        this.util.forEach(document.getElementsByClassName('details'), $details => {
-            const $summary = $details.getElementsByClassName('details-summary')[0];
-            $summary.addEventListener('click', () => {
-                $details.classList.toggle('open');
-            }, false);
-        });
-    }
-
-    initLightGallery() {
-        if (this.config.lightGallery) lightGallery(document.getElementById('content'), this.config.lightGallery);
-    }
-
     initHighlight() {
         this.util.forEach(document.querySelectorAll('.highlight > pre.chroma'), $preChroma => {
             const $chroma = document.createElement('div');
@@ -260,13 +247,10 @@ class Theme {
             this.initSVGIcon();
             this.initMenuMobile();
             this.initSwitchTheme();
-            this.initDetails();
-            this.initLightGallery();
             this.initHighlight();
             this.initTable();
             this.initHeaderLink();
             this.initMath();
-            this.initMapbox();
         } catch (err) {
             console.error(err);
         }
